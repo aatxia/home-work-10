@@ -1,0 +1,117 @@
+// Імпорт модулів через @use + @forward (рекомендовано в сучасному SCSS)
+@use 'reset';
+@use 'variables';
+@use 'typography';
+@use 'mixins';
+@use 'layout';
+@use 'buttons';
+@use 'header';
+@use 'nav';
+@use 'about';
+@use 'numbers';
+@use 'video';
+@use 'footer';
+@include media('lg') {
+  .header {
+    padding: 60px 0 100px;
+
+    .header-title {
+      margin-top: 80px;
+      font-size: 2.5rem;
+    }
+  }
+}
+@include media('md') {
+  .header {
+    padding: 50px 0 80px;
+
+    .header-title {
+      font-size: 2rem;
+      margin-top: 60px;
+    }
+
+    .header-btn {
+      width: 200px;
+      height: 55px;
+    }
+  }
+
+  .about-me, .video, .numbers {
+    padding: 80px 0;
+  }
+
+  .number-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .play_button {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@include media('sm') {
+  :root {
+    --font-size: 15px;
+  }
+
+  .header {
+    padding: 40px 0 60px;
+
+    .header-title {
+      font-size: 1.8rem;
+      margin-top: 40px;
+    }
+
+    .header-btn {
+      width: 180px;
+      height: 50px;
+      font-size: 0.9rem;
+    }
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .play_button {
+    width: 70px;
+    height: 70px;
+  }
+
+  .about-me, .video {
+    padding: 60px 0;
+  }
+}
+
+@include media('xs') {
+  .container {
+    padding-inline: 15px;
+  }
+
+  .header-title {
+    font-size: 1.6rem;
+  }
+
+  .play_button {
+    width: 60px;
+    height: 60px;
+  }
+
+  .number-card_image {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+$breakpoints: (
+  'xs': 375px,
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px
+);

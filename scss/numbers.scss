@@ -1,0 +1,39 @@
+.numbers {
+  padding: 100px 0;
+  background-color: $main-color;
+
+  &_cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+  }
+
+  .number-card {
+    display: flex;
+    align-items: center;
+
+    &_image {
+      width: 50px;
+      height: 50px;
+      margin-right: 20px;
+    }
+
+    &_info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &_amount {
+      font-size: 1.3125rem;
+      font-weight: 500;
+      color: $font-color;
+    }
+
+    &_name {
+      font-size: 1rem;
+      font-weight: 400;
+      color: $font-color;
+    }
+  }
+}
