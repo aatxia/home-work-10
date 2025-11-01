@@ -1,0 +1,15 @@
+.footer {
+  padding: 50px 0;
+  height: 151px;
+  background-color: $main-color;
+  color: $font-color;
+
+  &-title {
+    margin-bottom: 20px;
+    color: $font-color;
+  }
+
+  &-desc {
+    color: $font-color;
+  }
+}

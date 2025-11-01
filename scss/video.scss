@@ -1,0 +1,32 @@
+.video {
+  position: relative;
+  padding: 112px 0 100px;
+  background-color: $secondary-color;
+  text-align: center;
+
+  &_title {
+    color: $font-color2;
+    margin-bottom: 50px;
+  }
+
+  &_desc {
+    margin-inline: auto;
+    color: $font-color3;
+  }
+
+  &-img {
+    margin-top: 57px;
+    width: 100%;
+    max-width: 1110px;
+    height: auto;
+  }
+
+  .play_button {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    top: 60%;
+    left: 46%;
+  }
+}

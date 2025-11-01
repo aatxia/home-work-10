@@ -1,0 +1,22 @@
+$breakpoints: (
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px
+);
+
+@mixin media($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+}
+
+@mixin button($bg: $main-color, $color: $font-color) {
+  background-color: $bg;
+  color: $color;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+}

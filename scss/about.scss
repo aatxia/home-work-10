@@ -1,0 +1,14 @@
+.about-me {
+  padding: 112px 0 100px;
+  background-color: $font-color;
+
+&_title {
+    color: $font-color2;
+    margin-bottom: 50px;
+}
+
+&_desc {
+    margin-inline: auto;
+    color: $font-color3;
+}
+}
